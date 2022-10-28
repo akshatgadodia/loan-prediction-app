@@ -21,7 +21,7 @@ class request_body(BaseModel):
     prop:object
 
 #Train Model
-df=pd.read_csv(r"/backend/loan_data.csv")
+df=pd.read_csv(r"backend/loan_data.csv")
 del df['Loan_ID']
 X=df.drop("Loan_Status", axis=1)
 y=df['Loan_Status']
